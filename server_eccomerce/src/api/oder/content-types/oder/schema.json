@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oders",
+  "info": {
+    "singularName": "oder",
+    "pluralName": "oders",
+    "displayName": "Oder",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "totalPayment": {
+      "type": "decimal",
+      "required": true
+    },
+    "idPayment": {
+      "type": "string",
+      "required": false
+    },
+    "addressShipping": {
+      "type": "json",
+      "required": true
+    },
+    "products": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
