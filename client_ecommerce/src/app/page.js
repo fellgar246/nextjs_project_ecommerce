@@ -1,11 +1,10 @@
-
-import styles from './page.module.css'
+import './scss/page.scss'
 
 
 export default function Home() {
   return (
     <div>
-     <button type="button" class="btn btn-primary">Primary</button>
+      <h2>GameShop</h2>
     </div>
   )
 }
