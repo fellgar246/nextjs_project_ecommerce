@@ -1,8 +1,14 @@
+import { AuthLayout } from '@/layouts';
 import styles from './sign-in.module.scss'
 
 const signInPage = () => {
   return (
-    <div>sign-in</div>
+    <>
+      <AuthLayout>
+
+      <div>sign-in</div>
+      </AuthLayout>
+    </>
   )
 }
 
